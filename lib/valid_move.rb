@@ -11,7 +11,7 @@
   #if the index is greater than or equal to zero or less than or equal to 8 run position taken method.
 def valid_move?(board, index)
   if index >= 0 || index <= 8
-    return position_taken?(board, index)
+    return !position_taken?(board, index)
   else
     return false
   end
